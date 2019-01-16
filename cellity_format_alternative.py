@@ -22,6 +22,10 @@
 #  
 #  
 
+import gzip,os
+from numpy import array,float32,float64,mean,sum,std,where,ma,resize, \
+zeros,logical_not,divide,inf
+
 
 def htseqLFlsToGRM(lFlsHtseq,outGRMFlGns,outGRMFlSpkIns, \
 	spkInsPrfx='ERCC-',incldAllGns=True,nmbrSpkIns=2,clcTPM=False, \
